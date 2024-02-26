@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@301&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body {
+  background-color: var(--Very-Light-Gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+header {
+  text-align: center;
+  margin-top: 15px;
+}
+
+p {
+  color: var(--Grayish-Blue);
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.title-header {
+  font-size: 25px;
+}
+.title-header-1 {
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+}
+
+.title-header-2 {
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+}
+.paragraph-header {
+  font-size: 1.2rem;
+  white-space: pre-wrap;
+}
+
+.box {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+  width: 375px;
+  margin: 18px auto;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px -6px var(--Grayish-Blue);
+}
+.title-container > h1 {
+  color: var(--Very-Dark-Blue);
+  font-size: 30px;
+}
+
+.title-container {
+  margin: 30px;
+}
+
+.title-container > img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+  width: 130px;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 0;
+  left: 0;
+}
+
+.supervisor::after {
+  background-color: var(--Cyan);
+}
+
+.team-builder::after {
+  background-color: var(--Red);
+}
+
+.karma::after {
+  background-color: var(--Orange);
+}
+
+.calculator::after {
+  background-color: var(--Blue);
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (min-width: 1320px) {
+  .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .box {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-header > h1 {
+    font-size: 30px;
+  }
+  .paragraph-header {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .title-header > h1 {
+    font-size: 25px;
+  }
+  .box {
+    width: 90%;
+  }
+}
